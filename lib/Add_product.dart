@@ -117,8 +117,6 @@ class _Add_ProductState extends State<Add_Product> {
       child: Form(
         child: Column(
           children: <Widget>[
-            custom_typeahead(_typeAheadController),
-            SizedBox(height: _height / 60.0),
             firstNameTextFormField(),
             SizedBox(height: _height / 60.0),
             lastNameTextFormField(),
@@ -128,6 +126,8 @@ class _Add_ProductState extends State<Add_Product> {
             phoneTextFormField(),
             SizedBox(height: _height / 60.0),
             passwordTextFormField(),
+            custom_typeahead(_typeAheadController),
+            SizedBox(height: _height / 60.0),
           ],
         ),
       ),
